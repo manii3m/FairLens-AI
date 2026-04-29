@@ -107,7 +107,7 @@ def analyze_bias(req: AnalyzeRequest):
             "approval_rate": round(rate, 4)
         }
     
-    rates = [d["approval_rate"] for d in distribution.values() if d["count"] > 10] # Filter tiny groups
+    rates = [d["approval_rate"] for d in distribution.values() if d["count"] > 0] # Allow small groups for demo
     if len(rates) >= 2:
         max_rate = max(rates)
         min_rate = min(rates)
@@ -127,7 +127,7 @@ def analyze_bias(req: AnalyzeRequest):
 
     base_explanation = f"Analyzed outcomes across '{req.sensitive_column}'. "
     sorted_groups = sorted(
-        [item for item in distribution.items() if item[1]['count'] > 10],
+        [item for item in distribution.items() if item[1]['count'] > 0],
         key=lambda x: x[1]['approval_rate'], reverse=True
     )
     if len(sorted_groups) >= 2:
