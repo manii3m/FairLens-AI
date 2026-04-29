@@ -1,0 +1,21 @@
+Age,Gender,Income,Loan_Status,Credit_Score,Education
+25,Female,45000,0,600,Bachelors
+35,Male,80000,1,720,Masters
+45,Male,120000,1,750,PhD
+28,Female,52000,0,650,Bachelors
+30,Male,65000,1,680,Bachelors
+40,Female,90000,1,710,Masters
+22,Male,30000,0,590,High School
+50,Male,150000,1,780,PhD
+32,Female,58000,0,620,Bachelors
+29,Female,60000,1,690,Masters
+27,Male,48000,1,640,Bachelors
+38,Male,95000,1,730,Masters
+42,Female,110000,1,740,PhD
+24,Female,38000,0,610,High School
+31,Male,70000,1,695,Bachelors
+36,Female,85000,1,715,Masters
+26,Male,42000,0,630,Bachelors
+48,Male,135000,1,765,PhD
+33,Female,62000,0,660,Bachelors
+41,Male,105000,1,745,Masters
